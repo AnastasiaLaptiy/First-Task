@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nastya\\source\\repos\\firstPZ\\firstPZ\\firstPZ.csproj": {}
+    "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nastya\\source\\repos\\firstPZ\\firstPZ\\firstPZ.csproj": {
+    "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nastya\\source\\repos\\firstPZ\\firstPZ\\firstPZ.csproj",
+        "projectUniqueName": "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj",
         "projectName": "firstPZ",
-        "projectPath": "C:\\Users\\Nastya\\source\\repos\\firstPZ\\firstPZ\\firstPZ.csproj",
+        "projectPath": "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj",
         "packagesPath": "C:\\Users\\Nastya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nastya\\source\\repos\\firstPZ\\firstPZ\\obj\\",
+        "outputPath": "D:\\Intership\\firstPZ\\firstPZ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

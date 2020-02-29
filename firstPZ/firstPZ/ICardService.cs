@@ -4,11 +4,9 @@ using System.Text;
 
 namespace firstPZ
 {
-    delegate void Point();
-    delegate void Battle();
+    delegate void isValid(Dictionary<cardManager, playerManager> a);
     interface ICardService
     {
-        event Point Point;
-        event Battle Battle;
+      event isValid eventForTest;
     }
 }

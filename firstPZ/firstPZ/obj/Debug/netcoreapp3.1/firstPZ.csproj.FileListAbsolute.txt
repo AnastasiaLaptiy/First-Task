@@ -9,3 +9,14 @@ C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.dll
 C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.pdb
 C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.dll
 C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.pdb
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.exe
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.deps.json
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.json
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.dev.json
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.dll
+D:\Intership\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.pdb
+D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.csprojAssemblyReference.cache
+D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfoInputs.cache
+D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfo.cs
+D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.dll
+D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.pdb

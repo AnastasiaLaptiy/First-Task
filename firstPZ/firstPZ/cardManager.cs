@@ -4,7 +4,7 @@ using System.Text;
 
 namespace firstPZ
 {
-    class cardManager
+    class cardManager:cardModel
     {
         public cardModel createCard(int id, string name, int luck)
         {
@@ -12,7 +12,7 @@ namespace firstPZ
             cardModel cardModel = new cardModel();
             cardModel.id = id;
             cardModel.name = name;
-            cardModel.luck = 1;  //rand
+            cardModel.luck = luck;  //rand
             return cardModel;
         }
 /*        public List<cardModel> createDeck(cardModel cm)
