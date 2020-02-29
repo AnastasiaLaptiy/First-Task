@@ -1,0 +1,11 @@
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.csprojAssemblyReference.cache
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfoInputs.cache
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfo.cs
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.exe
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.deps.json
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.json
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.dev.json
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.dll
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.pdb
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.dll
+C:\Users\Nastya\source\repos\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.pdb
