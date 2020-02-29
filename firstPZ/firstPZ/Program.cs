@@ -8,24 +8,16 @@ namespace firstPZ
         
         static void Main(string[] args)
         {
-           
-           cardManager cm = new cardManager();
-            cm.createCard(1, "name",1);
+            GameProcess process = new GameProcess();
+            cardManager cm = new cardManager();
+            cardModel test = cm.createCard(1, "name", 1);
             playerManager pm = new playerManager();
-            pm.createPlayer(5, "player", 1);
-            Game game = new Game();
-            game.eventForTest += DisplayMessage;
-            game.isValid( game.getCard(cm, pm));
-           
+            playerModel player = pm.createPlayer(1, "player", 1);
+            process.isLuckyPlayer(process.getCard(test, player));
+            process.Battle(process.getCard(test, player));
+            Console.ReadKey();
 
-
-        Console.ReadKey();
         }
-
-        private static void DisplayMessage(string str)
-        {
-            Console.WriteLine($"{str}");
-            
-        }
+      
     }
 }
