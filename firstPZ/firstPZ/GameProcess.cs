@@ -11,6 +11,7 @@ namespace firstPZ
 
         public Dictionary<cardModel, playerModel> getCard(cardModel _cardModel, playerModel _playerModel)
         {
+            
             Dictionary<cardModel, playerModel> pairs = new Dictionary<cardModel, playerModel>();
             pairs.Add(_cardModel, _playerModel);
             return pairs;
@@ -18,6 +19,8 @@ namespace firstPZ
 
         public void isLuckyPlayer(Dictionary<cardModel, playerModel> pairs)
         {
+            eDisplay = null;
+            eColoredDisplay = null;
             foreach (KeyValuePair<cardModel, playerModel> pair in pairs)
             {
                 if (pair.Key.luck < pair.Value.cardNum)
@@ -39,6 +42,8 @@ namespace firstPZ
 
         public void Battle(Dictionary<cardModel, playerModel> players)
         {
+            eDisplay = null;
+            eColoredDisplay = null;
             foreach (KeyValuePair<cardModel, playerModel> pair in players)
             {
                 if (pair.Key.luck * pair.Value.cardNum > 30)
@@ -48,7 +53,7 @@ namespace firstPZ
                 }
                 else
                 {
-                   // eDisplay += Display;
+                    eDisplay += Display;
                     eColoredDisplay += ColoredAnotherDisplay;
                     eColoredDisplay?.Invoke();
                     eDisplay.Invoke("Lose");

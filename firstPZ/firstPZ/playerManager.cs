@@ -6,14 +6,12 @@ namespace firstPZ
 {
     class playerManager
     {
-        Random random = new Random();
         public playerModel createPlayer(int id, string name, int cardNum)
         {
             playerModel player = new playerModel();
-
             player.id = id;
             player.name = name;
-            player.cardNum = random.Next(10)-cardNum;
+            player.cardNum = 1; /*rand*/
             return player;
         }
     }
