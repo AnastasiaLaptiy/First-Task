@@ -65,16 +65,16 @@ namespace firstPZ
 
             }
         }
-        private void Display(string s)
+        public void Display(string s)
         {
             Console.WriteLine($"{s}");
         }
 
-        private void ColoredDisplay()
+        public void ColoredDisplay()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
-        private void ColoredAnotherDisplay()
+        public void ColoredAnotherDisplay()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
         }
