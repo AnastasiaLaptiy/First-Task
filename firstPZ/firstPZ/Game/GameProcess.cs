@@ -6,47 +6,46 @@ namespace firstPZ
 {
     class GameProcess : IGameProcess, IResultGameEvent
     {
-        public event Display eDisplay;
-        public event ColoredDisplay eColoredDisplay;
+        public event Display eDisplay = (x)=> { }; 
 
-        public Dictionary<cardModel, playerModel> getCard(cardModel _cardModel, playerModel _playerModel)
-        {
-            
-            Dictionary<cardModel, playerModel> pairs = new Dictionary<cardModel, playerModel>();
+        public event ColoredDisplay eColoredDisplay =()=> { };
+
+        public Dictionary<CardModel, PlayerModel> getCard(CardModel _cardModel, PlayerModel _playerModel)
+        {           
+            Dictionary<CardModel, PlayerModel> pairs = new Dictionary<CardModel, PlayerModel>();
             pairs.Add(_cardModel, _playerModel);
             return pairs;
         }
 
-        public void isLuckyPlayer(Dictionary<cardModel, playerModel> pairs)
+        public void isLuckyPlayer(Dictionary<CardModel, PlayerModel> pairs)
         {
-            eDisplay = null;
+             eDisplay = null;
             eColoredDisplay = null;
-            foreach (KeyValuePair<cardModel, playerModel> pair in pairs)
+            foreach (KeyValuePair<CardModel, PlayerModel> pair in pairs)
             {
                 if (pair.Key.luck < pair.Value.cardNum)
                 {
                     eDisplay += Display;
-                    eDisplay?.Invoke("Lucky one");
+                    eDisplay.Invoke("Lucky one");
                 }
 
                 else
                 {
                     eColoredDisplay += ColoredDisplay;
-                    eColoredDisplay?.Invoke();
+                    eColoredDisplay.Invoke();
                     eDisplay += Display;
-                    eDisplay?.Invoke("Unlucky one");
+                    eDisplay.Invoke("Unlucky one");
                 }
-
             }
         }
 
-        public void Battle(Dictionary<cardModel, playerModel> players)
+        public void Battle(Dictionary<CardModel, PlayerModel> players)
         {
             eDisplay = null;
             eColoredDisplay = null;
-            foreach (KeyValuePair<cardModel, playerModel> pair in players)
+            foreach (KeyValuePair<CardModel, PlayerModel> pair in players)
             {
-                if (pair.Key.luck * pair.Value.cardNum > 30)
+                if (pair.Key.luck * pair.Value.cardNum < 30)
                 {
                     eDisplay += Display;
                     eDisplay.Invoke("Win");
@@ -55,10 +54,10 @@ namespace firstPZ
                 {
                     eDisplay += Display;
                     eColoredDisplay += ColoredAnotherDisplay;
-                    eColoredDisplay?.Invoke();
+                    eColoredDisplay.Invoke();
                     eDisplay.Invoke("Lose");
                     eColoredDisplay += ColoredDisplay;
-                    eColoredDisplay?.Invoke();
+                    eColoredDisplay.Invoke();
                     eDisplay.Invoke("Such a huge mistake");
 
                 }
