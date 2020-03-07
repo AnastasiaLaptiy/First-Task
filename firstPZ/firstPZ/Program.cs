@@ -10,7 +10,7 @@ namespace firstPZ
         {
             PlayerManager pm = new PlayerManager();
             EventHandler eventHandler = new EventHandler();                       
-            PlayerModel testPM = pm.CreatePlayer(1, "player", -5);
+            PlayerModel testPM = pm.CreatePlayer(1, "player", 5);
             EventBus eventBus = new EventBus();
             eventBus.Performance(eventHandler, pm, testPM);
             

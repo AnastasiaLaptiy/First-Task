@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
- 
+
 namespace firstPZ
 {
-    public delegate int FirstEvent(PlayerModel pm);
+    public delegate void FirstEvent();
     class EventHandler
     {
         public event FirstEvent FirstSubscriber;
@@ -12,21 +12,14 @@ namespace firstPZ
 
         public void FirstSub()
         {
-            if(FirstSubscriber!= null)
-            {
-                Message message = new Message();
-                message.TypicalMessage();
-            }
-
+            FirstSubscriber?.Invoke();
         }
+
         public void SecondSub()
         {
-            if (SecondSubscriber != null)
-            {
-                Message message = new Message();
-                message.StrangeMessage();
-            }
-
+            SecondSubscriber?.Invoke();
         }
+
     }
 }
+
