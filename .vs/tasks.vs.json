@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-Interfaces",
+      "appliesTo": "firstPZ/firstPZ/Interfaces/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-Interfaces",
+      "appliesTo": "firstPZ/firstPZ/Interfaces/",
+      "type": "launch"
+    }
+  ]
+}

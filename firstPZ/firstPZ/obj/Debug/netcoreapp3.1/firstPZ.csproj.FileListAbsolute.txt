@@ -20,3 +20,14 @@ D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfoInputs.
 D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfo.cs
 D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.dll
 D:\Intership\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.pdb
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.csprojAssemblyReference.cache
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfoInputs.cache
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.AssemblyInfo.cs
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.dll
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\obj\Debug\netcoreapp3.1\firstPZ.pdb
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.exe
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.deps.json
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.json
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.runtimeconfig.dev.json
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.dll
+C:\Users\AstroMugiwara\source\repos\First-Task\firstPZ\firstPZ\bin\Debug\netcoreapp3.1\firstPZ.pdb

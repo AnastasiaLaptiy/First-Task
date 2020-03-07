@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using firstPZ.MessageService;
 
 namespace firstPZ
 {
@@ -8,13 +8,12 @@ namespace firstPZ
         
         static void Main(string[] args)
         {
-            GameProcess process = new GameProcess();
-            CardManager cm = new CardManager();
-            CardModel testCM = cm.createCard(1, "name", -155);
             PlayerManager pm = new PlayerManager();
-            PlayerModel testPM = pm.createPlayer(1, "player", 1);
-            process.isLuckyPlayer(process.getCard(testCM, testPM));
-            process.Battle(process.getCard(testCM, testPM));
+            EventHandler eventHandler = new EventHandler();                       
+            PlayerModel testPM = pm.CreatePlayer(1, "player", -5);
+            EventBus eventBus = new EventBus();
+            eventBus.Performance(eventHandler, pm, testPM);
+            
             Console.ReadKey();
         }
       

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj": {}
+    "C:\\Users\\AstroMugiwara\\source\\repos\\First-Task\\firstPZ\\firstPZ\\firstPZ.csproj": {}
   },
   "projects": {
-    "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj": {
+    "C:\\Users\\AstroMugiwara\\source\\repos\\First-Task\\firstPZ\\firstPZ\\firstPZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj",
+        "projectUniqueName": "C:\\Users\\AstroMugiwara\\source\\repos\\First-Task\\firstPZ\\firstPZ\\firstPZ.csproj",
         "projectName": "firstPZ",
-        "projectPath": "D:\\Intership\\firstPZ\\firstPZ\\firstPZ.csproj",
-        "packagesPath": "C:\\Users\\Nastya\\.nuget\\packages\\",
-        "outputPath": "D:\\Intership\\firstPZ\\firstPZ\\obj\\",
+        "projectPath": "C:\\Users\\AstroMugiwara\\source\\repos\\First-Task\\firstPZ\\firstPZ\\firstPZ.csproj",
+        "packagesPath": "C:\\Users\\AstroMugiwara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AstroMugiwara\\source\\repos\\First-Task\\firstPZ\\firstPZ\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nastya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AstroMugiwara\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

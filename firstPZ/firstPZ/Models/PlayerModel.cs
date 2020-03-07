@@ -4,11 +4,11 @@ using System.Text;
 
 namespace firstPZ
 {
-    class PlayerModel
+    public class PlayerModel
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public int cardNum { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int CardNum { get; set; }
      
     }
 }

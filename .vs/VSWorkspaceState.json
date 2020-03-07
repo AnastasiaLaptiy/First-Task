@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\firstPZ",
+    "\\firstPZ\\firstPZ",
+    "\\firstPZ\\firstPZ\\Game",
+    "\\firstPZ\\firstPZ\\Interfaces",
+    "\\firstPZ\\firstPZ\\Managers",
+    "\\firstPZ\\firstPZ\\MessageService"
+  ],
+  "SelectedNode": "\\firstPZ\\firstPZ\\firstPZ.csproj",
+  "PreviewInSolutionExplorer": false
+}
