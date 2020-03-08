@@ -1,5 +1,6 @@
 ﻿using firstPZ.Models;
 using System;
+
 namespace firstPZ.Managers
 {
     public class CardManager
