@@ -4,13 +4,22 @@ namespace firstPZ
 {
     public class Message
     {
-        public void StrangeMessage()
+        
+        public void PlayerTypicalMessage()
         {
-            Console.WriteLine("i'm strange message");
+            Console.WriteLine("u r typical player");            
         }
-        public void TypicalMessage()
+        public void PlayerStrangeMessage()
         {
-            Console.WriteLine("i'm typical message");            
+            Console.WriteLine("u r strange player");
+        }
+        public void PlayerGoodDeckMessage()
+        {
+            Console.WriteLine("deck is pretty good");
+        }
+        public void PlayerAwfulDeckMessage()
+        {
+            Console.WriteLine("deck is awful");
         }
     }
 }

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using firstPZ.Models;
+using System;
+using System.Collections.Generic;
 
 namespace firstPZ
 {
     class PlayerManager
     {
-        Random random = new Random();
+        private Random random = new Random();
         public PlayerModel CreatePlayer(int id, string name, int cardNum)
         {
             PlayerModel player = new PlayerModel
@@ -15,10 +17,19 @@ namespace firstPZ
             };
             return player;
         }
-        public int isLuckyPlayer(PlayerModel player)
+        public int IndentifyPlayerLuck(PlayerModel player)
         {
             Console.WriteLine("Am I lucky player?");
             return player.CardNum;
+        }
+        public DeckModel CreatePlayerDeck(int id, List<CardModel> deck)
+        {
+            DeckModel deckModel = new DeckModel
+            {
+                Id = id,
+                Deck = deck
+            };
+            return deckModel;
         }
     }
 }
