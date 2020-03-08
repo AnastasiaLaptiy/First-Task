@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 namespace firstPZ
 {
-    class PlayerManager
+    public class PlayerManager
     {
         private Random random = new Random();
+
         public PlayerModel CreatePlayer(int id, string name, int cardNum)
         {
             PlayerModel player = new PlayerModel
@@ -17,11 +18,13 @@ namespace firstPZ
             };
             return player;
         }
+
         public int IndentifyPlayerLuck(PlayerModel player)
         {
             Console.WriteLine("Am I lucky player?");
             return player.CardNum;
         }
+
         public DeckModel CreatePlayerDeck(int id, List<CardModel> deck)
         {
             DeckModel deckModel = new DeckModel

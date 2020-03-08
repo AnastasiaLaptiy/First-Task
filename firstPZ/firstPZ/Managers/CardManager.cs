@@ -1,13 +1,11 @@
 ﻿using firstPZ.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace firstPZ.Managers
 {
-    class CardManager
+    public class CardManager
     {
         private Random random = new Random();
+
         public CardModel createCard()
         {
             CardModel cardModel = new CardModel

@@ -1,11 +1,9 @@
 ﻿using firstPZ.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace firstPZ.Managers
 {
-    class DeckManager
+    public class DeckManager
     {
         public List<CardModel> CreateDeck()
         {

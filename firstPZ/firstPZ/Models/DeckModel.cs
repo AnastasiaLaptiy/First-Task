@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace firstPZ.Models
 {
-    class DeckModel
+    public class DeckModel
     {
         public int Id { get; set; }
+
         public List<CardModel> Deck { get; set; }
     }
 }

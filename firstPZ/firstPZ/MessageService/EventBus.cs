@@ -1,13 +1,11 @@
 ﻿using firstPZ.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace firstPZ.MessageService
 {
-    class EventBus
+    public class EventBus
     {
         private Message message = new Message();
+
         public void CheckPlayerLuck(PlayerEventHandler eventHandler, PlayerManager playerManager, PlayerModel player)
         {
             if (playerManager.IndentifyPlayerLuck(player) > 10)
@@ -19,6 +17,7 @@ namespace firstPZ.MessageService
                 eventHandler.IdentifyPlayerLuck += message.PlayerStrangeMessage;
             }
         }
+
         public void CheckPlayerDeck(PlayerEventHandler eventHandler, DeckModel deck)
         {
             foreach (CardModel item in deck.Deck)
@@ -33,25 +32,9 @@ namespace firstPZ.MessageService
                 }
             }
         }
+
         public void CheckWinner(PlayerEventHandler eventHandler, DeckModel deckA, DeckModel deckB)
         {
-            /*foreach (CardModel itemA in deckA.Deck ) 
-                foreach (CardModel itemB in deckB.Deck)
-                {
-                    if (itemA.Health < itemB.Damage)
-                    {
-                        eventHandler.IdentifyWinner += message.LoseMessage;
-                    }
-                    else if (itemB.Health < itemA.Damage)
-                    {
-                        eventHandler.IdentifyWinner += message.WinMessage;
-                    }
-                    else
-                    {
-                        eventHandler.IdentifyWinner += message.FunMessage;
-                    }
-                }*/
-
             for (int i = 0; i < deckA.Deck.Count; i++)
             {
                 if (deckA.Deck[i].Health > deckB.Deck[i].Damage)
@@ -68,6 +51,7 @@ namespace firstPZ.MessageService
                 }
             }
         }
+
         public void ShowMessage(PlayerEventHandler eventHandler)
         {
             eventHandler.IdentifyPlayerLuckSub();
