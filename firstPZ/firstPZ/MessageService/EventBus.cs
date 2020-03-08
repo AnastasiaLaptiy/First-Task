@@ -7,38 +7,72 @@ namespace firstPZ.MessageService
 {
     class EventBus
     {
-        Message message = new Message();
-        public void CheckPlayerLuck (PlayerEventHandler eventHandler, PlayerManager playerManager, PlayerModel player)
+        private Message message = new Message();
+        public void CheckPlayerLuck(PlayerEventHandler eventHandler, PlayerManager playerManager, PlayerModel player)
         {
             if (playerManager.IndentifyPlayerLuck(player) > 10)
             {
-                eventHandler.FirstSubscriber += message.PlayerTypicalMessage;
+                eventHandler.IdentifyPlayerLuck += message.PlayerTypicalMessage;
             }
             else
             {
-                eventHandler.SecondSubscriber +=message.PlayerStrangeMessage;
+                eventHandler.IdentifyPlayerLuck += message.PlayerStrangeMessage;
             }
-          
         }
         public void CheckPlayerDeck(PlayerEventHandler eventHandler, DeckModel deck)
         {
-            foreach(CardModel item in deck.Deck)
+            foreach (CardModel item in deck.Deck)
             {
-                if(item.Health>2 && item.Damage < 4)
+                if (item.Health > 2 && item.Damage < 4)
                 {
-                    eventHandler.FirstSubscriber += message.PlayerGoodDeckMessage;
+                    eventHandler.IdentifyPlayerDeck += message.PlayerGoodDeckMessage;
                 }
                 else
                 {
-                    eventHandler.SecondSubscriber += message.PlayerAwfulDeckMessage;
-                }                   
+                    eventHandler.IdentifyPlayerDeck += message.PlayerAwfulDeckMessage;
+                }
+            }
+        }
+        public void CheckWinner(PlayerEventHandler eventHandler, DeckModel deckA, DeckModel deckB)
+        {
+            /*foreach (CardModel itemA in deckA.Deck ) 
+                foreach (CardModel itemB in deckB.Deck)
+                {
+                    if (itemA.Health < itemB.Damage)
+                    {
+                        eventHandler.IdentifyWinner += message.LoseMessage;
+                    }
+                    else if (itemB.Health < itemA.Damage)
+                    {
+                        eventHandler.IdentifyWinner += message.WinMessage;
+                    }
+                    else
+                    {
+                        eventHandler.IdentifyWinner += message.FunMessage;
+                    }
+                }*/
+
+            for (int i = 0; i < deckA.Deck.Count; i++)
+            {
+                if (deckA.Deck[i].Health > deckB.Deck[i].Damage)
+                {
+                    eventHandler.IdentifyWinner += message.WinMessage;
+                }
+                else if(deckA.Deck[i].Health < deckB.Deck[i].Damage)
+                {
+                    eventHandler.IdentifyWinner += message.LoseMessage;
+                }
+                else
+                {
+                    eventHandler.IdentifyWinner += message.FunMessage;
+                }
             }
         }
         public void ShowMessage(PlayerEventHandler eventHandler)
         {
-            eventHandler.FirstSub();
-            eventHandler.SecondSub();
+            eventHandler.IdentifyPlayerLuckSub();
+            eventHandler.IdentifyPlayerDeckSub();
+            eventHandler.IdentifyWinnerSub();
         }
-
     }
 }

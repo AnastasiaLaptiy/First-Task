@@ -3,8 +3,7 @@ using System;
 namespace firstPZ
 {
     public class Message
-    {
-        
+    {    
         public void PlayerTypicalMessage()
         {
             Console.WriteLine("u r typical player");            
@@ -20,6 +19,18 @@ namespace firstPZ
         public void PlayerAwfulDeckMessage()
         {
             Console.WriteLine("deck is awful");
+        }
+        public void WinMessage()
+        {
+            Console.WriteLine("A win the game");
+        }
+        public void LoseMessage()
+        {
+            Console.WriteLine("A lose the game");
+        }
+        public void FunMessage()
+        {
+            Console.WriteLine("random winner");
         }
     }
 }

@@ -6,21 +6,30 @@ namespace firstPZ
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             PlayerManager player = new PlayerManager();
-            PlayerEventHandler playerEventHandler = new PlayerEventHandler();
-            PlayerModel testPlayer = player.CreatePlayer(1, "player", -4);
             EventBus eventBus = new EventBus();
-            eventBus.CheckPlayerLuck(playerEventHandler, player, testPlayer);
-
             DeckManager deckManager = new DeckManager();
-            var playerA= player.CreatePlayerDeck(1, deckManager.CreateDeck());
-           // var playerB = player.CreatePlayerDeck(2, deckManager.CreateDeck());
+            PlayerEventHandler playerEventHandlerA = new PlayerEventHandler();
+            PlayerEventHandler playerEventHandlerB = new PlayerEventHandler();
+            PlayerEventHandler winner = new PlayerEventHandler();
 
-            eventBus.CheckPlayerDeck(playerEventHandler, playerA);
-            eventBus.ShowMessage(playerEventHandler);
+            var playerA= player.CreatePlayerDeck(1, deckManager.CreateDeck());
+            var playerB = player.CreatePlayerDeck(2, deckManager.CreateDeck());
+            PlayerModel testPlayerA = player.CreatePlayer(1, "playerA", -4);
+            PlayerModel testPlayerB = player.CreatePlayer(2, "playerB", 4);
+
+            eventBus.CheckPlayerLuck(playerEventHandlerA, player, testPlayerA);
+            eventBus.CheckPlayerDeck(playerEventHandlerA, playerA);
+            eventBus.ShowMessage(playerEventHandlerA);
+            
+            eventBus.CheckPlayerLuck(playerEventHandlerB, player, testPlayerB);
+            eventBus.CheckPlayerDeck(playerEventHandlerB, playerB);
+            eventBus.ShowMessage(playerEventHandlerB);
+
+            eventBus.CheckWinner(winner, playerA, playerB);
+            eventBus.ShowMessage(winner);
 
             Console.ReadKey();
         }

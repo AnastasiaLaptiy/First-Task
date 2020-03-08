@@ -4,18 +4,23 @@ using System.Text;
 
 namespace firstPZ
 {
-    public delegate void IdentifyPlayerLuck();
+    public delegate void IdentifyPlayer();
     class PlayerEventHandler
     {
-        public event IdentifyPlayerLuck FirstSubscriber = () => { };
-        public event IdentifyPlayerLuck SecondSubscriber = () => { };
-        public void FirstSub()
+        public event IdentifyPlayer IdentifyPlayerLuck = () => { };
+        public event IdentifyPlayer IdentifyPlayerDeck = () => { };
+        public event IdentifyPlayer IdentifyWinner = () => { };
+        public void IdentifyPlayerLuckSub()
         {
-            FirstSubscriber?.Invoke();
+            IdentifyPlayerLuck?.Invoke();
         }
-        public void SecondSub()
+        public void IdentifyPlayerDeckSub()
         {
-            SecondSubscriber?.Invoke();
+            IdentifyPlayerDeck?.Invoke();
+        }
+        public void IdentifyWinnerSub()
+        {
+            IdentifyWinner?.Invoke();
         }
     }
 }

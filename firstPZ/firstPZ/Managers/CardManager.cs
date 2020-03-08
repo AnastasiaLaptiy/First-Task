@@ -7,7 +7,7 @@ namespace firstPZ.Managers
 {
     class CardManager
     {
-        Random random = new Random();
+        private Random random = new Random();
         public CardModel createCard()
         {
             CardModel cardModel = new CardModel
